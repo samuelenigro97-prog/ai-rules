@@ -19,6 +19,7 @@ Ogni modifica deve finire su GitHub, così posso sempre tornare indietro con `gi
 - Mai creare repo nella home (~), in Desktop, Download o Documenti, né in cartelle di configurazione (~/.claude, ~/.codex, ~/.gemini, ~/.config...). Lì, prima di modificare un file, fanne una copia `.bak` e segnalalo nel report.
 
 ## Branch
+- Eccezione: nel repo `ai-rules` (queste regole) si committa e si fa push direttamente su `main`, senza branch né PR.
 - Mai lavorare direttamente su `main` o `master`. Per ogni compito crea un branch: `feat/…`, `fix/…`, `refactor/…`, `docs/…`, `chore/…`. Se esiste già un branch per lo stesso compito, continua lì.
 - Se trovi modifiche non committate che non hai fatto tu, portale nel nuovo branch e salvale come primo commit: `chore: salva modifiche preesistenti`.
 
