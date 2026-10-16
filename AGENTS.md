@@ -37,3 +37,7 @@ Ogni modifica deve finire su GitHub, così posso sempre tornare indietro con `gi
 
 ## Report finale
 Indica sempre: branch usato, commit (hash + messaggio), stato del push, link della pull request, come tornare indietro (`git revert <hash>`).
+# Memoria condivisa tra le IA
+- Se dico "ricorda", "aggiungi alle regole" o simili: aggiungi la regola in `~/ai-rules/AGENTS.md`, nella sezione giusta, senza duplicare né cancellare regole esistenti. Poi esegui `git -C ~/ai-rules commit -am "docs: <regola in breve>" && git -C ~/ai-rules push`. Se non sei sul mio Mac (sessione cloud), fai la stessa modifica nel repo GitHub `samuelenigro97-prog/ai-rules`, branch `main`.
+- Se dico "installa questa skill" o ti do un repo GitHub di skill: prima leggine il contenuto e dimmi in due righe cosa fa; poi installala per tutte le IA con `npx -y skills add <url> -g -y` e verifica che compaia in `~/.claude/skills`.
+- Se una skill scarica ed esegue codice da internet o invia dati all'esterno, non installarla: fermati e chiedimi.
