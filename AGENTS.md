@@ -6,6 +6,9 @@ Prima di ogni compito, se una skill elencata combacia anche solo in parte, invoc
 ## Lingua
 Rispondi e comunica sempre in lingua italiana, salvo esplicita richiesta contraria dell'utente.
 
+## Parità multipiattaforma (Windows / Mac)
+Nei progetti che supportano sia Windows che macOS (come PC Facile), ogni modifica logica, funzionalità, interfaccia o correzione deve essere applicata a entrambe le versioni (`setup-pc.ps1` e `setup-mac.sh`), tranne nei casi in cui sia intrinsecamente specifica per uno o l'altro sistema operativo. Consultare e aggiornare `PARITA.md` a ogni modifica.
+
 # Regole Git (sempre attive)
 
 > Queste regole si aggiungono a tutte le altre istruzioni (globali, di progetto, impostazioni) e vanno seguite insieme a quelle. In caso di conflitto vince la regola già esistente: segnalami il conflitto nel report finale.
