@@ -38,8 +38,14 @@ Ogni modifica deve finire su GitHub, così posso sempre tornare indietro con `gi
 - Per annullare una modifica usa `git revert <hash>`.
 - Se il push o `gh` falliscono: riprova una volta. Se fallisce ancora, lascia il lavoro committato e nel report scrivi il motivo e il comando per ripetere il push. Non aggirare il problema (niente force, niente cambi di remote).
 
+## Versioni
+- Ogni merge su `main` è una nuova versione SemVer (`vX.Y.Z`): `fix:` → patch, `feat:` → minor, modifiche incompatibili → major. Prima versione: `v0.1.0`. Escluso il repo `ai-rules`.
+- Aggiorna il numero dove il progetto lo tiene già (`package.json`, `pyproject.toml`, costante nel codice…), altrimenti in un file `VERSION`; committalo nel branch prima della PR (`chore: versione vX.Y.Z`).
+- Dopo il merge: `git pull` su `main`, poi `gh release create vX.Y.Z --target main --generate-notes` (crea anche il tag).
+- Apri la risposta finale con `📦 <nome-repo> — vX.Y.Z`.
+
 ## Report finale
-Indica sempre: branch usato, commit (hash + messaggio), stato del push, link della pull request, come tornare indietro (`git revert <hash>`).
+Indica sempre: versione rilasciata (con link della release), branch usato, commit (hash + messaggio), stato del push, link della pull request, come tornare indietro (`git revert <hash>`).
 # Memoria condivisa tra le IA
 - Se dico "ricorda", "aggiungi alle regole" o simili: aggiungi la regola in `~/ai-rules/AGENTS.md`, nella sezione giusta, senza duplicare né cancellare regole esistenti. Poi esegui `git -C ~/ai-rules commit -am "docs: <regola in breve>" && git -C ~/ai-rules push`. Se non sei sul mio Mac (sessione cloud), fai la stessa modifica nel repo GitHub `samuelenigro97-prog/ai-rules`, branch `main`.
 - Se dico "installa questa skill" o ti do un repo GitHub di skill: prima leggine il contenuto e dimmi in due righe cosa fa; poi installala per tutte le IA con `npx -y skills add <url> -g -y` e verifica che compaia in `~/.claude/skills`.
