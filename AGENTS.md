@@ -29,7 +29,7 @@ Ogni modifica deve finire su GitHub, così posso sempre tornare indietro con `gi
 ## Commit e push
 - Fai un commit per ogni modifica logica completata, non uno solo alla fine. Usa lo stile Conventional Commits (`feat:`, `fix:`, `refactor:`, `docs:`, `chore:`).
 - Fai il push subito dopo ogni commit (la prima volta `git push -u origin <branch>`).
-- A fine compito apri una pull request verso il branch principale con `gh pr create --fill`, se non esiste già. Non fare il merge.
+- A fine compito apri una pull request verso il branch principale con `gh pr create --fill`, se non esiste già, ed esegui sempre il merge su `main` (es. `gh pr merge --merge --admin`).
 - A fine risposta `git status` deve essere pulito: niente deve restare solo in locale.
 - Mai committare `.env`, chiavi, token, `node_modules`, `.venv` o file di build: aggiorna `.gitignore` se serve.
 
