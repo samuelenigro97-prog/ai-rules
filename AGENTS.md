@@ -6,6 +6,10 @@ Prima di ogni compito, se una skill elencata combacia anche solo in parte, invoc
 ## Lingua
 Rispondi e comunica sempre in lingua italiana, salvo esplicita richiesta contraria dell'utente.
 
+## Risoluzione schermo e automazione Chrome
+- Ottimizza sempre le interfacce per **schermata grande/intera** (desktop full-width), e non vincolarle forzatamente al layout stretto al 50% di metà schermo.
+- Chrome dedicato all'automazione deve operare rigorosamente in background, senza disturbare, senza rubare il focus, senza sovrapporsi e lavorando in piena autonomia senza bloccarsi.
+
 ## Immagini allegate
 Quando un prompt contiene immagini, leggi sempre il nome di ogni file allegato prima di agire: spesso il nome descrive l'intervento da fare. Considera il nome parte della richiesta, insieme al testo e al contenuto dell'immagine.
 
