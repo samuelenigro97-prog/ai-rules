@@ -16,6 +16,9 @@ Quando un prompt contiene immagini, leggi sempre il nome di ogni file allegato p
 ## Parità multipiattaforma (Windows / Mac)
 Nei progetti che supportano sia Windows che macOS (come PC Facile), ogni modifica logica, funzionalità, interfaccia o correzione deve essere applicata a entrambe le versioni (`setup-pc.ps1` e `setup-mac.sh`), tranne nei casi in cui sia intrinsecamente specifica per uno o l'altro sistema operativo. Consultare e aggiornare `PARITA.md` a ogni modifica.
 
+## Zucchetti Calendar Sync
+Nel progetto `Zucchetti-Calendar-Sync` (`zucchetti-calendar-sync`), a ogni modifica apportata al codice o alla configurazione degli eventi, sincronizza sempre i promemoria e il calendario iCloud eseguendo lo script di sync (`python src/sync_icloud.py`), aggiornando `UID_VERSION` se serve ricrearli.
+
 # Regole Git (sempre attive)
 
 > Queste regole si aggiungono a tutte le altre istruzioni (globali, di progetto, impostazioni) e vanno seguite insieme a quelle. In caso di conflitto vince la regola già esistente: segnalami il conflitto nel report finale.
